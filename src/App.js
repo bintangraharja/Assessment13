@@ -46,9 +46,10 @@ function App(){
   const run = () => {
     if(hour < 0 || minute < 0|| second < 0){
       clearInterval(interval);
-      reset();
-    }else 
-    if(hour === 0 && minute === 0 && second === 0){
+      hour = 0; minute = 0; second =0;
+      
+    }
+    else if(hour === 0 && minute === 0 && second === 0){
       clearInterval(interval);
       setStatus(3);
     }else{
