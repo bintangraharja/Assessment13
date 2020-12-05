@@ -83,7 +83,8 @@ function App(){
 
   return (
   <section className="main-container">
-   <div className="center header">
+    <section className="timer">
+      <div className="center header">
     {(status === 3)?
     <style>{'body{background-color: #66ff66;}'}</style>: 
     <style>{'body{background-color: rgb(13, 240, 240);}'}</style>
@@ -119,6 +120,8 @@ function App(){
      <Btn status={status} resume={resume} reset={reset} stop={stop} start={start}/>
   </div>
   </section>
+  </section>
+
   )
 }
 export default App;
